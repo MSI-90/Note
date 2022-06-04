@@ -10,15 +10,15 @@
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Закрыть" Click="MenuItem_Click"/>
         </Menu>
-        <StackPanel DockPanel.Dock="Left" Orientation="Vertical" Width="300">
-            <TextBlock Text="{Binding editText}" Margin="5, 10,0,0" Foreground="Maroon" FontWeight="Bold" FontSize="13" />
-            <TextBlock Text="{Binding RowContent}" Margin="5, 30,0,0" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
-            <ListBox ItemsSource="{Binding DataColumns}">
-                
-            </ListBox>
+        <StackPanel DockPanel.Dock="Left" Orientation="Vertical">
+            <TextBlock Text="{Binding editText}" Margin="5,10,0,0" Foreground="Maroon" FontWeight="Bold" FontSize="13" />
+            <TextBlock Text="{Binding DataColumns[0]}" Margin="5,20,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
+            <TextBox Text="{Binding RowContent[0]}" Margin="5,0,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
+            <TextBlock Text="{Binding DataColumns[1]}" Margin="5,20,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
+            <TextBox Text="{Binding RowContent[1]}" Margin="5,0,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
+            <TextBlock Text="{Binding DataColumns[2]}" Margin="5,20,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
+            <TextBox Text="{Binding RowContent[2]}" Margin="5,0,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
         </StackPanel>
-        <StackPanel DockPanel.Dock="Right" Orientation="Vertical">
-            
-        </StackPanel>
+        
     </DockPanel>
 </Window>

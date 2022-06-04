@@ -18,18 +18,27 @@ namespace Note.View
 {
     public partial class RowEditor : Window
     {
-        private List<string> rowContent;
         public string editText { get; set; } = "Доступные для редактирования поля";
+
+        private List<string> rowContent;
         public List<string> RowContent
         {
             get { return rowContent; }
             set => Set(ref rowContent, value);
         }
 
+        private List<string> dataColumns;
+        public List<string> DataColumns
+        {
+            get { return dataColumns; }
+            set => Set(ref dataColumns, value);
+        }
+
         public event PropertyChangedEventHandler PropertyChanged;
-        public RowEditor(List<string> list)
+        public RowEditor(List<string> list, List<string> dataCol)
         {   
             this.RowContent = list;
+            this.DataColumns = dataCol;
             InitializeComponent();
             DataContext = this;
         }

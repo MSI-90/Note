@@ -348,7 +348,14 @@ namespace Note
         private void MenuItem_Click_6(object sender, RoutedEventArgs e)
         {   
             List<string> list = new List<string>();
-            
+
+            List<string> dataOutputColumns = new List<string>();
+            foreach (var item in dataOutput.Columns)
+            {
+                dataOutputColumns.Add(item);
+            }
+            dataOutputColumns.RemoveAt(0);
+
             foreach (DataOutput dataOutput in mainDataGrid.Items)
             {
                 if (dataOutput == mainDataGrid.CurrentItem)
@@ -357,7 +364,7 @@ namespace Note
                     //MessageBox.Show(list[0]+"\n"+list[1]+"\n"+list[2]);
                 }
             }
-            RowEditor re = new RowEditor(list);
+            RowEditor re = new RowEditor(list, dataOutputColumns);
             re.Background = this.Background;
             re.ShowDialog();
         }

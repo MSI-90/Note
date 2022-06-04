@@ -13,7 +13,7 @@
         <StackPanel DockPanel.Dock="Left" Orientation="Vertical" Width="300">
             <TextBlock Text="{Binding editText}" Margin="5, 10,0,0" Foreground="Maroon" FontWeight="Bold" FontSize="13" />
             <TextBlock Text="{Binding RowContent}" Margin="5, 30,0,0" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
-            <ListBox ItemsSource="{Binding RowContent}">
+            <ListBox ItemsSource="{Binding DataColumns}">
                 
             </ListBox>
         </StackPanel>

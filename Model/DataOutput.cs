@@ -93,13 +93,6 @@ namespace Note.Model
                 "OR " + Columns[3] + " GLOB '" + "*" + textFromTextBox + "*" + "'";
             Reader = SQLcommand.ExecuteReader();
 
-            //var columns = new List<string>();
-            //for (int i = 0; i < Reader.FieldCount; i++)
-            //{
-            //    columns.Add(Reader.GetName(i));
-            //}
-            //Columns = columns;
-
             while (Reader.Read())
             {
                 dataOutput.Add(new DataOutput()

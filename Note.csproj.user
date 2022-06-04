@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>E:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\Properties\PublishProfiles\FolderProfile2.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="View\Main.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\About.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\CreateDB.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\InsertIntoNote.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\miniColorPicker.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="View\OnContextMenus.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="View\Main.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\About.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\CreateDB.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\InsertIntoNote.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\miniColorPicker.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\OnContextMenus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

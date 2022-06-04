@@ -347,7 +347,6 @@ namespace Note
 
         private void MenuItem_Click_6(object sender, RoutedEventArgs e)
         {   
-            
             List<string> list = new List<string>();
             
             foreach (DataOutput dataOutput in mainDataGrid.Items)
@@ -359,6 +358,5 @@ namespace Note
                 }
             }
         }
-
     } 
 }

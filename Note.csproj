@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>bin\Release\net5.0-windows\AverMedia.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\MainIcon.png" />
+    <None Remove="View\Res\Icons\chm.png" />
+    <None Remove="View\Res\Icons\color.png" />
+    <None Remove="View\Res\Icons\create.png" />
+    <None Remove="View\Res\Icons\exit.png" />
+    <None Remove="View\Res\Icons\new.png" />
+    <None Remove="View\Res\Icons\open.png" />
+    <None Remove="View\Res\Icons\open1.png" />
+    <None Remove="View\Res\Icons\open_.png" />
+    <None Remove="View\Res\Icons\rename.png" />
+    <None Remove="View\Res\Image\about.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bin\Release\net5.0-windows\AverMedia.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.115.5" />
+    <PackageReference Include="WPFLocalizeExtension" Version="3.9.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="View\MainIcon.png" />
+    <Resource Include="View\Res\Icons\chm.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Res\Icons\color.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Res\Icons\create.png" />
+    <Resource Include="View\Res\Icons\exit.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Res\Icons\new.png" />
+    <Resource Include="View\Res\Icons\open.png" />
+    <Resource Include="View\Res\Icons\open1.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="View\Res\Icons\rename.png" />
+    <Resource Include="View\Res\Image\about.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>

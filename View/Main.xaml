@@ -1,0 +1,46 @@
+﻿<Window x:Class="Note.Main"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Note"
+        xmlns:lex="http://wpflocalizeextension.codeplex.com"
+        lex:LocalizeDictionary.DesignCulture="de"
+        lex:ResxLocalizationProvider.DefaultAssembly="Variants"
+        lex:ResxLocalizationProvider.DefaultDictionary="Strings"
+        mc:Ignorable="d"
+        Title="Выбор действия" Height="400" Width="500" WindowStartupLocation="CenterScreen" WindowStyle="None">
+    <Window.Resources>
+        <Style x:Key="buttons" TargetType="Button">
+            <Setter Property="Width" Value="240"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="Brown"/>
+            <Setter Property="Background" Value="AliceBlue"/>
+            <Setter Property="Margin" Value="0,10,0,10"/>
+            <Setter Property="BorderBrush" Value="Green"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="98*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical"
+                        VerticalAlignment="Center">
+                <Button Name="CreateNewnote" Content="Создать новый блокнот" Style="{StaticResource buttons}" Click="Button_Click_1"/>
+                <Button Name="DownloadNote" Content="Загрузить имеющийся блокнот" Style="{StaticResource buttons}" Click="Button_Click_2" />
+                <Button Name="CloseApp" Content="Закрыть приложение" Style="{StaticResource buttons}" Click="Button_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

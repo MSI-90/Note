@@ -1,0 +1,303 @@
+﻿<Window x:Class="Note.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Note"
+        xmlns:vm="clr-namespace:Note.ViewModel"
+        mc:Ignorable="d"
+        x:Name="Window"
+        Title="Note v 1.2" Height="750" Width="950" MaxWidth="{Binding systemWidth}" 
+        MaxHeight="{Binding systemHeight}"
+        Icon="/View/MainIcon.png" WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <vm:SystemF/>
+    </Window.DataContext>
+    <Window.Resources>
+        <Style x:Key="MainMenu" TargetType="{x:Type MenuItem}">
+            <Setter Property="Foreground" Value="maroon"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Margin" Value="5,0,0,0"/>
+        </Style>
+        <Style x:Key="InternalMenu" TargetType="{x:Type MenuItem}">
+            <Setter Property="Background" Value="#CCFFCC"/>
+            <Setter Property="Foreground" Value="#333366"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+        <Style x:Key ="HeaderStyle" TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#CCCC33"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="DataGridColumnHeader">
+                        <Border Background="{TemplateBinding Background}" 
+                                BorderThickness="1" BorderBrush="Black">
+                            <TextBlock Text="{Binding}" TextAlignment="Center"
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"
+                                       Foreground="#993333"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            
+        </Style>
+        <Style x:Key="alignCener" TargetType="TextBlock">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style x:Key="padding" TargetType="TextBlock">
+            <Setter Property="Padding" Value="5,0,0,0"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style x:Key="topButton" TargetType="Button">
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Height" Value="30"/>
+
+            <Setter Property="Foreground" Value="DarkCyan"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontFamily" Value="Tahoma"/>
+            <Setter Property="Margin" Value="0,20,10,0"/>
+            <Setter Property="BorderBrush" Value="Maroon"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
+        <Style x:Key="topCbox" TargetType="ComboBox">
+            <Setter Property="Width" Value="130"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="10,2,0,0"/>
+        </Style>
+        <Style x:Key="topBox" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="#666699"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="0,5,0,0"/>
+        </Style>
+        <Style x:Key="listBox" TargetType="ComboBox">
+            <Setter Property="Width" Value="150"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="Padding" Value="5,5,0,0"/>
+            <Setter Property="FontSize" Value="14"/>
+        
+        </Style>
+      
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.05*"/>
+        </Grid.RowDefinitions>
+        <Menu>
+            <MenuItem Header="Файл" Style="{StaticResource MainMenu}">
+                <MenuItem Header="Создать" Click="MenuItem_Click_4">
+                    <MenuItem.Icon>
+                        <Image Source="res/icons/create.png" />
+                    </MenuItem.Icon>
+                    <MenuItem Header="Новый журнал\блокнот (.db файл)">
+                        <MenuItem.Icon>
+                            <Image Source="res/icons/new.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Открыть">
+                    <MenuItem.Icon>
+                        <Image Source="res/icons/open.png" />
+                    </MenuItem.Icon>
+                    <MenuItem Header="Журнал\блокнот (.db файл)" Click="MenuItem_Click_3">
+                        <MenuItem.Icon>
+                            <Image Source="res/icons/open1.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="Выход" Style="{StaticResource InternalMenu}" 
+                          Click="MenuItem_Click">
+                    <MenuItem.Icon>
+                        <Image Source="res/icons/exit.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Вид" Style="{StaticResource MainMenu}">
+                <MenuItem Header="Цвет" Style="{StaticResource InternalMenu}" Click="MenuItem_Click_2">
+                    <MenuItem.Icon>
+                        <Image Source="res/icons/color.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Справка" Style="{StaticResource MainMenu}">
+                <MenuItem Header="О программе" Style="{StaticResource InternalMenu}" Click="MenuItem_Click_1">
+                    <MenuItem.Icon>
+                        <Image Source="res/icons/chm.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <ScrollViewer Grid.Row="2" Margin="0,-45,1.5,0" Padding="0,0,0,-1" HorizontalScrollBarVisibility="Disabled">
+            <Grid Name="Contents">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+
+                        <ColumnDefinition Width="198*"/>
+                        <ColumnDefinition Width="233*"/>
+                        <ColumnDefinition Width="233*"/>
+                        <ColumnDefinition Width="233*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="15*"/>
+                        <RowDefinition Height="550"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"
+                                HorizontalAlignment="Center">
+                        <TextBox x:Name="Find" Width="130" Height="30" Margin="65,10,0,0"
+                                 Padding="3,3,3,3" TextChanged="Find_TextChanged"/>
+                    </StackPanel>
+                    <StackPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="5" Orientation="Horizontal" 
+                                HorizontalAlignment="Center" Margin="80,0,0,0" Grid.RowSpan="1">
+
+                        <Button Content="Редактировать блокнот" Style="{StaticResource topButton}" Click="Button_Click"/>
+                        
+                    </StackPanel>
+                    <DataGrid x:Name="mainDataGrid" Width="{Binding SystemWidth}"
+                              CanUserAddRows="False" Grid.Column="0" Grid.Row="2"
+                              Grid.ColumnSpan="5" Margin="-7,30,0,0"
+                              MouseDoubleClick="mainDataGrid_MouseDoubleClick_1" Grid.RowSpan="2"
+                              ItemsSource="{Binding dataOutputs}" CanUserReorderColumns="False"
+                              DataGrid.ColumnWidth ="Auto" SelectionUnit="CellOrRowHeader" AutoGenerateColumns="False" >
+                        <DataGrid.Resources>
+                            <Style TargetType="TextBlock">
+                                <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
+                            </Style>
+
+                            <ContextMenu x:Key="DataGridColumnHeaderContextMenu">
+                                <MenuItem Header="Переименовать заголовок" Click="MenuItem_Click_5">
+                                    <MenuItem.Icon>
+                                        <Image Source="res/icons/rename.png"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </ContextMenu>
+                            <Style x:Key="HeaderStyle" TargetType="DataGridColumnHeader">
+                                <Setter Property="ContextMenu" Value="{StaticResource DataGridColumnHeaderContextMenu}" />
+                                <Setter Property="Background" Value="#CCCC33"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="DataGridColumnHeader">
+                                            <Border Background="{TemplateBinding Background}" 
+                                BorderThickness="1" BorderBrush="Black">
+                                                <TextBlock Text="{Binding}" TextAlignment="Center"
+                                       VerticalAlignment="Center" 
+                                       HorizontalAlignment="Center"
+                                       Foreground="#993333"
+                                       FontWeight="SemiBold"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                            
+                            <ContextMenu x:Key="DataGridRowContextMenu">
+                                <MenuItem Header="Редактор строки" Click="MenuItem_Click_6">
+                                    <MenuItem.Icon>
+                                        <Image Source="res/icons/rename.png"/>
+                                    </MenuItem.Icon>
+                                </MenuItem>
+                            </ContextMenu>
+                            <Style TargetType="DataGridRow">
+                                <Setter Property="ContextMenu" Value="{StaticResource DataGridRowContextMenu}" />
+
+                                    <Setter Property="Foreground" Value="Maroon"/>
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="#CCCC99" Opacity="0.8"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Resources>
+                                        <SolidColorBrush x:Key="{x:Static 
+                            SystemColors.InactiveSelectionHighlightBrushKey}" Color="Transparent"/>
+                                        <SolidColorBrush x:Key="{x:Static
+                            SystemColors.HighlightBrushKey}" Color="#FF4A5939" Opacity="0.8"/>
+                                    </Style.Resources>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background">
+                                            <Setter.Value>
+                                                <SolidColorBrush Color="#FF3E3E42" Opacity="0.8"/>
+                                            </Setter.Value>
+                                        </Setter>
+                                        <Setter Property="Foreground" Value="White"/>
+                                        <Setter Property="FontSize" Value="12.7"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.Resources>
+                        <DataGrid.Columns>
+                            <DataGridTemplateColumn Header="ID"
+                                        HeaderStyle="{StaticResource HeaderStyle}" CanUserResize="False">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding ID}" Style="{StaticResource ResourceKey=alignCener}">
+                                        </TextBlock>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn  Header="1"  
+                                        HeaderStyle="{StaticResource HeaderStyle}">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Kategory}" Style="{StaticResource ResourceKey=alignCener}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="2" 
+                                        HeaderStyle="{StaticResource HeaderStyle}">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Title}" Style="{StaticResource ResourceKey=alignCener}"/>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                            <DataGridTemplateColumn Header="3" 
+                                        HeaderStyle="{StaticResource HeaderStyle}">
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <TextBlock x:Name="toBrowser" Text="{Binding Link}" Style="{StaticResource ResourceKey=padding}" />
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+                        </DataGrid.Columns>
+                        
+                    </DataGrid>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+        <StatusBar Name="ApplicationStatus" Grid.Row="3" 
+                   VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="30"
+                   Width="{Binding ElementName=Window, Path=ActualWidth}">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"></ColumnDefinition>
+                            <ColumnDefinition Width="0.2*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <TextBlock Name="statusOne"/>
+            <StatusBarItem Grid.Column="1">
+                <TextBlock Name="statusTwo"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</Window>

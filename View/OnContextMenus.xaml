@@ -1,0 +1,103 @@
+﻿<Window x:Class="Note.View.OnContextMenus"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Note.View"
+        mc:Ignorable="d"
+        Title="{Binding Title}" Height="450" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
+    <Window.Resources>
+        <Style x:Key="topLeft" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Arial, Tahoma"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Foreground" Value="Maroon"/>
+            <Setter Property="Margin" Value="10,37,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style x:Key="top2Left" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Arial, Tahoma"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Foreground" Value="Maroon"/>
+            <Setter Property="Margin" Value="10,110,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Width" Value="350"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style x:Key="topRight" TargetType="Label">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Arial, Tahoma"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontStyle" Value="Italic"/>
+            <Setter Property="Foreground" Value="Maroon"/>
+            <Setter Property="Margin" Value="0,30,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="Width" Value="220"/>
+            <Setter Property="Height" Value="30"/>
+        </Style>
+        <Style x:Key="topRighttCB" TargetType="ComboBox">
+            <Setter Property="Width" Value="220"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="0,55,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style x:Key="{x:Type ComboBoxItem}" TargetType="{x:Type ComboBoxItem}">
+            <Setter Property="Foreground" Value="Brown"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+        </Style>
+        <Style x:Key="{x:Type Button}" TargetType="{x:Type Button}">
+            <Setter Property="Width" Value="220"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Content" Value="Переименовать"/>
+            <Setter Property="Foreground" Value="Brown"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="BorderBrush" Value="Chocolate"/>
+            <Setter Property="BorderThickness" Value="2"/>
+            <Setter Property="Margin" Value="0,100,0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+        <Style x:Key="{x:Type TextBox}" TargetType="{x:Type TextBox}">
+            <Setter Property="Width" Value="220"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="0,25,0,0"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="16*"/>
+            <ColumnDefinition Width="11*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" 
+            Text="Выберите заголовок из раскрывающегося списка - справа, который Вы хотите переименовать"       
+            Style="{StaticResource topLeft}" />
+        <TextBlock Text="Укажите желаемое название заголовка
+                   и нажмите на кнопку 'Переименовать'" Style="{StaticResource top2Left}"/>
+        <Label Grid.Row="0" Grid.Column="1" Content="Названия полей блокнота"
+               Style="{StaticResource topRight}"/>
+        <ComboBox Grid.Column="1" Grid.Row="0" x:Name="listOfColumns" 
+                   Style="{StaticResource topRighttCB}" 
+                  SelectionChanged="listOfColumns_SelectionChanged"
+                  ItemsSource="{Binding Issues}" SelectedItem="{Binding Select}"/>
+        <TextBox Name="newCaptionTB" Grid.Column="1" Grid.Row="0" />
+        <Button Name="renameBtn" Grid.Column="1" Grid.Row="0" Click="Button_Click" Visibility="Hidden"/>
+    </Grid>
+</Window>

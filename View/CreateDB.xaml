@@ -1,0 +1,71 @@
+﻿<Window x:Class="Note.View.CreateDB"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Note.View"
+        mc:Ignorable="d"
+        Title="Новый список заметок" Height="450" Width="680"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style x:Key="label" TargetType="TextBlock">
+            <Setter Property="Foreground" Value="brown"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="data" TargetType="TextBox">
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="Foreground" Value="DarkCyan"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.6*"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Grid.ColumnSpan="2">
+                <TextBlock Grid.Row="0" Text="Создание нового журнала\блокнота"
+                     FontFamily="Arial" FontWeight="SemiBold" FontSize="16"
+                     HorizontalAlignment="Center"/>
+                <TextBlock Text="Стандартный Набор полей: Категория, Наименование, Ссылка на ресурс"
+                       FontFamily="Arial" FontWeight="SemiBold" FontSize="14"
+                     HorizontalAlignment="Center" Margin="0,5,0,0"
+                       Foreground="Maroon"/>
+                <TextBox x:Name="dbName" Text="Укажите название блокнота" 
+                         Width="170" Height="20" Margin="0,5,0,0"
+                         ToolTip="Укажите название блокнота"/>
+            </StackPanel>
+            <TextBlock Grid.Row="1" Text="Поле 1:" Style="{StaticResource label}"/>
+            <TextBox x:Name="Kategory" Grid.Row="1" Grid.Column="1" Style="{DynamicResource data}"
+                     ToolTip="Например - Категория"/>
+            <TextBlock Grid.Row="2" Text="Поле 2:" Style="{StaticResource label}" />
+            <TextBox x:Name="Name" Grid.Row="2" Grid.Column="1" Style="{DynamicResource data}"
+                     ToolTip="Например - Наименование"/>
+            <TextBlock Grid.Row="3" Text="Поле 3:" Style="{StaticResource label}" />
+            <TextBox x:Name="Link" Grid.Row="3" Grid.Column="2" Style="{DynamicResource data}"
+                     ToolTip="Например - Ссылка на ресурс"/>
+            <StackPanel Grid.Row ="4" Grid.ColumnSpan="2">
+                <Button Content="Создать"  Width="150" Height="30" FontSize="18"
+                        Foreground="Tomato" FontWeight="SemiBold"
+                        Margin="0,25,0,0" 
+                        BorderBrush="Black" BorderThickness="2" Click="Button_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

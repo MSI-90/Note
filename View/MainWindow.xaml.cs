@@ -302,17 +302,6 @@ namespace Note
             insertNote.Owner = this;
             insertNote.Show();
         }
-        //private void Button_Click_1(object sender, RoutedEventArgs e)
-        //{   
-        //    if (mainDataGrid.ItemsSource == null)
-        //    {
-        //        MessageBox.Show("Для начала необходимо выбрать существущий блокнот, либо создать новый");
-        //    }
-        //    else
-        //    {
-        //        mainDG();
-        //    }
-        //}
         private void Find_TextChanged(object sender, TextChangedEventArgs e)
         {
             string textBox = Find.Text;

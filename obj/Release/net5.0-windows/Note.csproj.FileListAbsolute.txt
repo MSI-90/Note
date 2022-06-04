@@ -61,3 +61,5 @@ E:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows\
 E:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows\Note.Properties.Resources.resources
 E:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows\View\OnContextMenus.g.cs
 E:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows\View\OnContextMenus.baml
+E:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows\View\RowEditor.g.cs
+E:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows\View\RowEditor.baml

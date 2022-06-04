@@ -29,9 +29,9 @@ namespace Note.Model
         {
             List<string> list = new List<string>()
             {
-                Kategory,
-                Title,
-                Link
+                {Kategory},
+                {Title},
+                {Link}
             };
             return list;
         }

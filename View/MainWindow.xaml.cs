@@ -354,9 +354,12 @@ namespace Note
                 if (dataOutput == mainDataGrid.CurrentItem)
                 {
                     list = dataOutput.GetListString();
-                    MessageBox.Show(list[0]+"\n"+list[1]+"\n"+list[2]);
+                    //MessageBox.Show(list[0]+"\n"+list[1]+"\n"+list[2]);
                 }
             }
+            RowEditor re = new RowEditor(list);
+            re.Background = this.Background;
+            re.ShowDialog();
         }
     } 
 }

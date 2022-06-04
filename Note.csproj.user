@@ -27,6 +27,9 @@
     <Compile Update="View\OnContextMenus.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\RowEditor.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="View\Main.xaml">
@@ -48,6 +51,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\OnContextMenus.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\RowEditor.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

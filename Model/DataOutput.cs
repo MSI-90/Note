@@ -25,9 +25,9 @@ namespace Note.Model
         public List<string> Columns { get; set; }
         public string textFromTextBox { get; set; }
 
-        public List<string> GetListString()
+        public ObservableCollection<string> GetListString()
         {
-            List<string> list = new List<string>()
+            ObservableCollection<string> list = new ObservableCollection<string>()
             {
                 {Kategory},
                 {Title},

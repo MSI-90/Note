@@ -347,7 +347,7 @@ namespace Note
 
         private void MenuItem_Click_6(object sender, RoutedEventArgs e)
         {   
-            List<string> list = new List<string>();
+            ObservableCollection<string> list = new ObservableCollection<string>();
 
             List<string> dataOutputColumns = new List<string>();
             foreach (var item in dataOutput.Columns)

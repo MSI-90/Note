@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -20,8 +21,8 @@ namespace Note.View
     {
         public string editText { get; set; } = "Доступные для редактирования поля";
 
-        private List<string> rowContent;
-        public List<string> RowContent
+        private ObservableCollection<string> rowContent;
+        public ObservableCollection<string> RowContent
         {
             get { return rowContent; }
             set => Set(ref rowContent, value);
@@ -35,11 +36,12 @@ namespace Note.View
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public RowEditor(List<string> list, List<string> dataCol)
+        public RowEditor(ObservableCollection<string> list, List<string> dataCol)
         {   
-            this.RowContent = list;
-            this.DataColumns = dataCol;
+            this.rowContent = list;
+            this.dataColumns = dataCol;
             InitializeComponent();
+
             DataContext = this;
         }
 
@@ -59,6 +61,28 @@ namespace Note.View
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string s = cb.SelectedItem.ToString();
+            string ss;
+            int i = 0;
+            foreach (var item in rowContent)
+            {
+                if (item.Equals(s))
+                {
+                    ss = item.ToString();
+                    i = rowContent.IndexOf(ss);
+                }
+            }
+            rowContent[i] = tb.Text;
+            
+            cb.ItemsSource = rowContent;
+            foreach(var item in rowContent)
+            {
+                MessageBox.Show(item.ToString());
+            }
         }
     }
 }

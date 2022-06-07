@@ -25,10 +25,11 @@ namespace Note.Model
         public List<string> Columns { get; set; }
         public string textFromTextBox { get; set; }
 
-        public ObservableCollection<string> GetListString()
+        public ObservableCollection<object> GetListString()
         {
-            ObservableCollection<string> list = new ObservableCollection<string>()
+            ObservableCollection<object> list = new ObservableCollection<object>()
             {
+                {ID},   
                 {Kategory},
                 {Title},
                 {Link}
@@ -141,6 +142,31 @@ namespace Note.Model
             SqliteConnection.Close();
 
             return dataOutput;
+        }
+
+        public void UpdateFields(int _id, string dataList, int index)
+        {
+
+            int _idField = _id; // номер порядковый, id поля
+
+            string transerToColumn="";
+
+            transerToColumn = Columns[index];
+
+
+            this.SQLcommand = new SQLiteCommand();
+
+            this.dbFile = dbFile;
+            this.SqliteConnection = new SQLiteConnection("Data Source=" + dbFile + ";Version=3;");
+            SqliteConnection.Open();
+
+            SQLcommand.Connection = SqliteConnection; // Connection to DataBase
+
+            SQLcommand = SqliteConnection.CreateCommand();
+            SQLcommand.CommandText = "Update Data SET '" + transerToColumn + "' = '" + dataList + "' WHERE Id = " + _idField + " ";
+            SQLcommand.ExecuteNonQuery();
+
+            SqliteConnection.Close();
         }
     }
 }

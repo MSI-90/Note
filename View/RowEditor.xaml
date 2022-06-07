@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Note.View"
         mc:Ignorable="d"
-        Title="RowEditor" Height="450" Width="600">
+        Title="RowEditor" Height="450" Width="600" WindowStartupLocation="CenterOwner">
     <DockPanel>
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Закрыть" Click="MenuItem_Click"/>
@@ -14,12 +14,14 @@
             <TextBlock Text="{Binding editText}" Margin="5,10,0,0" Foreground="Maroon" FontWeight="Bold" FontSize="13" />
             <TextBlock Text="{Binding DataColumns[0]}" Margin="5,20,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
             <TextBox Text="{Binding RowContent[0]}" Margin="5,0,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
-            <TextBlock Text="{Binding DataColumns[1]}" Margin="5,20,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
+            <TextBlock Text="{Binding DataColumns[1]}" Margin="5,10,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
             <TextBox Text="{Binding RowContent[1]}" Margin="5,0,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
-            <TextBlock Text="{Binding DataColumns[2]}" Margin="5,20,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
+            <TextBlock Text="{Binding DataColumns[2]}" Margin="5,10,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
             <TextBox Text="{Binding RowContent[2]}" Margin="5,0,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
+            <TextBlock Text="{Binding DataColumns[3]}" Margin="5,10,0,0" Foreground="DarkMagenta" FontWeight="Bold" FontSize="13"/>
+            <TextBox Text="{Binding RowContent[3]}" Margin="5,0,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
 
-            <ComboBox Name="cb" ItemsSource="{Binding RowContent}" Margin="5,10,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
+            <ComboBox Name="cb" ItemsSource="{Binding RowContent}" Margin="5,20,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
             <TextBox x:Name="tb" Margin="5,10,0,-5" Foreground="Maroon" FontWeight="Bold" FontSize="13"/>
             <Button Content="Сменить" Click="Button_Click" Margin="5,10,0,-5"/>
         </StackPanel>

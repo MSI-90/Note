@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Note.Model;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -19,24 +20,26 @@ namespace Note.View
 {
     public partial class RowEditor : Window
     {
+        DataOutput data;
         public string editText { get; set; } = "Доступные для редактирования поля";
+        public int index { get; set; }
 
-        private ObservableCollection<string> rowContent;
-        public ObservableCollection<string> RowContent
+        private ObservableCollection<object> rowContent;
+        public ObservableCollection<object> RowContent
         {
             get { return rowContent; }
             set => Set(ref rowContent, value);
         }
 
-        private List<string> dataColumns;
-        public List<string> DataColumns
+        private List<object> dataColumns;
+        public List<object> DataColumns
         {
             get { return dataColumns; }
             set => Set(ref dataColumns, value);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        public RowEditor(ObservableCollection<string> list, List<string> dataCol)
+        public RowEditor(ObservableCollection<object> list, List<object> dataCol)
         {   
             this.rowContent = list;
             this.dataColumns = dataCol;
@@ -58,31 +61,53 @@ namespace Note.View
             return true;
         }
 
+        private void NoteUpdate(string dataTextForUpdate)
+        {
+            string dataBaseName = (Owner as MainWindow).insertIntoPath;
+
+            data = new DataOutput();
+            data.dbFile = dataBaseName;
+
+            int _id = Convert.ToInt32(rowContent[0]);
+
+            data.ReadData();
+            data.UpdateFields(_id, dataTextForUpdate, this.index);
+
+            (this.Owner as MainWindow).mainDG();
+        }
+
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
-        {
+        {   
             string s = cb.SelectedItem.ToString();
+
             string ss;
-            int i = 0;
-            foreach (var item in rowContent)
+
+            if (tb.Text.Equals("")) MessageBox.Show("Вы не указали новое значение выбранного выше поля данных");
+            else
             {
-                if (item.Equals(s))
+                foreach (var item in rowContent)
                 {
-                    ss = item.ToString();
-                    i = rowContent.IndexOf(ss);
+                    if (item.Equals(s))
+                    {
+                        ss = item.ToString();
+                        this.index = rowContent.IndexOf(ss);
+                    }
                 }
+                rowContent[this.index] = tb.Text;
+
+                string dataForUpdate = tb.Text;
+
+                NoteUpdate(dataForUpdate);
+
+                cb.ItemsSource = rowContent;
+
             }
-            rowContent[i] = tb.Text;
             
-            cb.ItemsSource = rowContent;
-            foreach(var item in rowContent)
-            {
-                MessageBox.Show(item.ToString());
-            }
         }
     }
 }

@@ -347,14 +347,14 @@ namespace Note
 
         private void MenuItem_Click_6(object sender, RoutedEventArgs e)
         {   
-            ObservableCollection<string> list = new ObservableCollection<string>();
+            ObservableCollection<object> list = new ObservableCollection<object>();
 
-            List<string> dataOutputColumns = new List<string>();
+            List<object> dataOutputColumns = new List<object>();
             foreach (var item in dataOutput.Columns)
             {
                 dataOutputColumns.Add(item);
             }
-            dataOutputColumns.RemoveAt(0);
+            //dataOutputColumns.RemoveAt(0);
 
             foreach (DataOutput dataOutput in mainDataGrid.Items)
             {
@@ -366,6 +366,7 @@ namespace Note
             }
             RowEditor re = new RowEditor(list, dataOutputColumns);
             re.Background = this.Background;
+            re.Owner = this;
             re.ShowDialog();
         }
     } 

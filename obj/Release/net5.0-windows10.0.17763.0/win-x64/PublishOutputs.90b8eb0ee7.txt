@@ -1,0 +1,4 @@
+H:\UDEMY\565\Note.pdb
+H:\UDEMY\565\sni.dll
+H:\UDEMY\565\SQLite.Interop.dll
+H:\UDEMY\565\Note.exe

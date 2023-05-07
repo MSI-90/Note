@@ -1,0 +1,4 @@
+C:\Users\EMl\Desktop\Новая папка\Новая папка\Note.pdb
+C:\Users\EMl\Desktop\Новая папка\Новая папка\sni.dll
+C:\Users\EMl\Desktop\Новая папка\Новая папка\SQLite.Interop.dll
+C:\Users\EMl\Desktop\Новая папка\Новая папка\Note.exe

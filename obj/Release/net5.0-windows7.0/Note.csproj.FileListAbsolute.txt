@@ -1,0 +1,195 @@
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.exe
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.deps.json
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.runtimeconfig.json
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.runtimeconfig.dev.json
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.pdb
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\EntityFramework.SqlServer.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\EntityFramework.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Microsoft.Win32.SystemEvents.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Data.SQLite.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.CodeDom.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Data.SqlClient.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Data.SQLite.EF6.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Drawing.Common.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Management.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\WPFLocalizeExtension.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\XAMLMarkupExtensions.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-arm64\native\sni.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-x64\native\sni.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-x86\native\sni.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\linux-x64\native\SQLite.Interop.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\osx-x64\native\SQLite.Interop.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-x64\native\SQLite.Interop.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-x86\native\SQLite.Interop.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\System.Management.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.csproj.AssemblyReference.cache
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\About.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\CreateDB.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\InsertIntoNote.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\Main.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\MainWindow.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\miniColorPicker.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\OnContextMenus.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\RowEditor.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\App.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note_Content.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note_MarkupCompile.cache
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note_MarkupCompile.lref
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\About.baml
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\CreateDB.baml
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\InsertIntoNote.baml
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\Main.baml
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\MainWindow.baml
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\miniColorPicker.baml
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\OnContextMenus.baml
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\RowEditor.baml
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.g.resources
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.Properties.Resources.resources
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.csproj.GenerateResource.cache
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.GeneratedMSBuildEditorConfig.editorconfig
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.AssemblyInfoInputs.cache
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.AssemblyInfo.cs
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.csproj.CoreCompileInputs.cache
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.csproj.CopyComplete
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\refint\Note.dll
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.pdb
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.genruntimeconfig.cache
+G:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\ref\Note.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.exe
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.deps.json
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.runtimeconfig.json
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.runtimeconfig.dev.json
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Note.pdb
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\EntityFramework.SqlServer.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\EntityFramework.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\Microsoft.Win32.SystemEvents.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Data.SQLite.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.CodeDom.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Data.SqlClient.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Data.SQLite.EF6.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Drawing.Common.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\System.Management.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\WPFLocalizeExtension.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\XAMLMarkupExtensions.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-arm64\native\sni.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-x64\native\sni.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-x86\native\sni.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\linux-x64\native\SQLite.Interop.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\osx-x64\native\SQLite.Interop.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-x64\native\SQLite.Interop.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win-x86\native\SQLite.Interop.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\System.Management.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.csproj.AssemblyReference.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\About.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\CreateDB.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\InsertIntoNote.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\Main.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\MainWindow.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\miniColorPicker.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\OnContextMenus.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\RowEditor.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\App.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note_Content.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note_MarkupCompile.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note_MarkupCompile.lref
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\About.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\CreateDB.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\InsertIntoNote.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\Main.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\MainWindow.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\miniColorPicker.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\OnContextMenus.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\View\RowEditor.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.g.resources
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.Properties.Resources.resources
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.csproj.GenerateResource.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.GeneratedMSBuildEditorConfig.editorconfig
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.AssemblyInfoInputs.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.AssemblyInfo.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.csproj.CoreCompileInputs.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.csproj.CopyComplete
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\refint\Note.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.pdb
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\Note.genruntimeconfig.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note\Note\obj\Release\net5.0-windows7.0\ref\Note.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\Note.exe
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\Note.deps.json
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\Note.runtimeconfig.json
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\Note.runtimeconfig.dev.json
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\Note.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\Note.pdb
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\EntityFramework.SqlServer.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\EntityFramework.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\Microsoft.Win32.SystemEvents.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\System.Data.SQLite.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\System.CodeDom.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\System.Data.SqlClient.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\System.Data.SQLite.EF6.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\System.Drawing.Common.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\System.Management.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\WPFLocalizeExtension.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\XAMLMarkupExtensions.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win-arm64\native\sni.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win-x64\native\sni.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win-x86\native\sni.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\linux-x64\native\SQLite.Interop.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\osx-x64\native\SQLite.Interop.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win-x64\native\SQLite.Interop.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win-x86\native\SQLite.Interop.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\bin\Release\net5.0-windows7.0\runtimes\win\lib\netcoreapp3.1\System.Management.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.csproj.AssemblyReference.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\About.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\CreateDB.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\InsertIntoNote.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\Main.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\MainWindow.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\miniColorPicker.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\OnContextMenus.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\RowEditor.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\App.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note_Content.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note_MarkupCompile.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note_MarkupCompile.lref
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\About.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\CreateDB.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\InsertIntoNote.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\Main.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\MainWindow.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\miniColorPicker.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\OnContextMenus.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\View\RowEditor.baml
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.g.resources
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.Properties.Resources.resources
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.csproj.GenerateResource.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.GeneratedMSBuildEditorConfig.editorconfig
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.AssemblyInfoInputs.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.AssemblyInfo.cs
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.csproj.CoreCompileInputs.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.csproj.CopyComplete
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\refint\Note.dll
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.pdb
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\Note.genruntimeconfig.cache
+H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\obj\Release\net5.0-windows7.0\ref\Note.dll

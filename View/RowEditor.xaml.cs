@@ -42,7 +42,9 @@ namespace Note.View
         public RowEditor(ObservableCollection<object> list, List<object> dataCol)
         {   
             this.rowContent = list;
+            this.rowContent.RemoveAt(0);
             this.dataColumns = dataCol;
+            this.dataColumns.RemoveAt(0);
             InitializeComponent();
 
             DataContext = this;

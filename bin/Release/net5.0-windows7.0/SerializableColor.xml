@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<SerializableColor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <colorProp>
+    <A>255</A>
+    <R>222</R>
+    <G>184</G>
+    <B>135</B>
+    <ScA>1</ScA>
+    <ScR>0.73046076</ScR>
+    <ScG>0.4793202</ScG>
+    <ScB>0.24228115</ScB>
+  </colorProp>
+</SerializableColor>

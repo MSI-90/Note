@@ -7,7 +7,7 @@
         xmlns:vm="clr-namespace:Note.ViewModel"
         mc:Ignorable="d"
         x:Name="Window"
-        Title="Note v 1.2" Height="750" Width="950" MaxWidth="{Binding systemWidth}" 
+        Title="Note v 1.2" Height="750" Width="1260" MaxWidth="{Binding systemWidth}" 
         MaxHeight="{Binding systemHeight}"
         Icon="/View/MainIcon.png" WindowStartupLocation="CenterScreen">
     <Window.DataContext>
@@ -173,7 +173,8 @@
                               Grid.ColumnSpan="5" Margin="-7,30,0,0"
                               MouseDoubleClick="mainDataGrid_MouseDoubleClick_1" Grid.RowSpan="2"
                               ItemsSource="{Binding dataOutputs}" CanUserReorderColumns="False"
-                              DataGrid.ColumnWidth ="Auto" SelectionUnit="CellOrRowHeader" AutoGenerateColumns="False" >
+                              SelectionUnit="FullRow"  AutoGenerateColumns="False" HorizontalScrollBarVisibility="Disabled"
+                              >
                         <DataGrid.Resources>
                             <Style TargetType="TextBlock">
                                 <Setter Property="TextBlock.TextWrapping" Value="Wrap"/>
@@ -255,7 +256,8 @@
                                         HeaderStyle="{StaticResource HeaderStyle}">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Kategory}" Style="{StaticResource ResourceKey=alignCener}"/>
+                                        <TextBlock Text="{Binding Kategory}" Style="{StaticResource ResourceKey=alignCener}"
+                                                   TextWrapping="Wrap"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
@@ -263,7 +265,7 @@
                                         HeaderStyle="{StaticResource HeaderStyle}">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock Text="{Binding Title}" Style="{StaticResource ResourceKey=alignCener}"/>
+                                        <TextBlock Text="{Binding Title}" Style="{StaticResource ResourceKey=alignCener}" />
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>
@@ -271,7 +273,8 @@
                                         HeaderStyle="{StaticResource HeaderStyle}">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
-                                        <TextBlock x:Name="toBrowser" Text="{Binding Link}" Style="{StaticResource ResourceKey=padding}" />
+                                        <TextBlock x:Name="toBrowser" Text="{Binding Link}" Style="{StaticResource ResourceKey=padding}" 
+                                                   TextWrapping="Wrap"/>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
                             </DataGridTemplateColumn>

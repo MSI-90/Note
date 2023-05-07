@@ -25,6 +25,10 @@ namespace Note.Model
         public List<string> Columns { get; set; }
         public string textFromTextBox { get; set; }
 
+        public double sizeOfFirs { get; set; }
+        public double sizeOfTwo { get; set; }
+        public double sizeOfTree { get; set; }
+
         public ObservableCollection<object> GetListString()
         {
             ObservableCollection<object> list = new ObservableCollection<object>()
@@ -62,6 +66,9 @@ namespace Note.Model
             }
             Columns = columns;
 
+            ObservableCollection<string> first = new ObservableCollection<string>();
+            ObservableCollection<string> two = new ObservableCollection<string>();
+            ObservableCollection<string> free = new ObservableCollection<string>();
 
             while (Reader.Read())
             {
@@ -72,8 +79,43 @@ namespace Note.Model
                     Title = Reader[columns[2]].ToString(),
                     Link = Reader[columns[3]].ToString(),
                 });
+
+                first.Add(Reader[columns[1]].ToString());
+                two.Add(Reader[columns[2]].ToString());
+                free.Add(Reader[columns[3]].ToString());
             }
             SqliteConnection.Close();
+
+            double sc = 0;
+            foreach (var item in first)
+            {
+                if (item.Length > sc)
+                {
+                    sc = item.Length;
+                }
+            }
+            sizeOfFirs = sc;
+
+            sc = 0;
+            foreach (var item in two)
+            {
+                if (item.Length > sc)
+                {
+                    sc = item.Length;
+                }
+            }
+            sizeOfTwo = sc;
+
+            sc = 0;
+            foreach (var item in free)
+            {
+                if (item.Length > sc)
+                {
+                    sc = item.Length;
+                }
+            }
+            sizeOfTree = sc;
+
             return dataOutput;
         }
 

@@ -129,6 +129,11 @@ namespace Note
                 }
                 mainDataGrid.Columns[i].Header = repl;
             }
+            mainDataGrid.Width = 1200;
+            //mainDataGrid.Columns[1].Width = dataOutput.sizeOfFirs*8;
+            //mainDataGrid.Columns[2].Width = dataOutput.sizeOfTwo*2;
+            mainDataGrid.Columns[3].Width = DataGridLength.Auto;
+            //mainDataGrid.Columns[1].Width = 80;
         }
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
@@ -145,77 +150,81 @@ namespace Note
                 @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
                 @"C:\Program Files (x86)\Mozilla Firefox\firefox.exe",
                 @"C:\Program Files\Mozilla Firefox\firefox.exe",
-                @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+                @"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe",
+                @"C:\Program Files\Mozilla Firefox\firefox.exe",
+                @"C:\Program Files\Microsoft\Edge\Application\msedge.exe"
             };
 
-            foreach(string find in pathToBrowsr)
-            {   
-                fileInfo = new FileInfo(find);
+            for (int i = 0; i < pathToBrowsr.Length; i++)
+            {
+                fileInfo = new FileInfo(pathToBrowsr[i]);
                 if (fileInfo.Exists)
                 {
-                    path = find;
+                    path = pathToBrowsr[i];
+                    MessageBox.Show("Сейчас будет инициализирован процесс перехода по вашей ссылке с помощью браузера");
                     break;
-                }
-                else
-                {
-                    MessageBox.Show("Необходимо установить один из предложенных браузеров:\n Google Chrome\n Mozilla Firefox\n Microsoft Edge");
                 }
             }
 
-            string pattern = @"\s*=\s*(?:[""'](?<1>[^""']*)[""']|(?<1>[^>\s]+))";
-            List<string> ht = new List<string>() { "http", "https", "ftp", "www", "HTTP", "HTTPS", "WWW", "FTP"};
-            List<string> ht2 = new List<string>() { "РФ", "рф", "com", "COM", "Com", "org", "net", "ru", "RU" };
-
-            foreach (DataOutput dataOutput in mainDataGrid.Items)
+            if (path == "")
+                MessageBox.Show("Необходимо установить один из предложенных браузеров:\nGoogle Chrome\nMozilla Firefox\nMicrosoft Edge");
+            else
             {
-                if (dataOutput == mainDataGrid.CurrentItem)
-                {   
-                    foreach (var str in ht)
-                    { 
-                        if (dataOutput.Kategory.StartsWith(str))
+                string pattern = @"\s*=\s*(?:[""'](?<1>[^""']*)[""']|(?<1>[^>\s]+))";
+                List<string> ht = new List<string>() { "http", "https", "ftp", "www", "HTTP", "HTTPS", "WWW", "FTP" };
+                List<string> ht2 = new List<string>() { "РФ", "рф", "com", "COM", "Com", "org", "net", "ru", "RU" };
+
+                foreach (DataOutput dataOutput in mainDataGrid.Items)
+                {
+                    if (dataOutput == mainDataGrid.CurrentItem)
+                    {
+                        foreach (var str in ht)
                         {
-                            System.Diagnostics.Process.Start(path, dataOutput.Kategory);
-                            break;
-                        }
-                        else if (dataOutput.Title.StartsWith(str))
-                        {
-                            System.Diagnostics.Process.Start(path, dataOutput.Title);
-                            break;
-                        }
-                        else if (dataOutput.Link.StartsWith(str))
-                        {
-                            System.Diagnostics.Process.Start(path, dataOutput.Link);
-                            break;
-                        }
-                        else
-                        {
-                            continue;
+                            if (dataOutput.Kategory.StartsWith(str))
+                            {
+                                System.Diagnostics.Process.Start(path, dataOutput.Kategory);
+                                break;
+                            }
+                            else if (dataOutput.Title.StartsWith(str))
+                            {
+                                System.Diagnostics.Process.Start(path, dataOutput.Title);
+                                break;
+                            }
+                            else if (dataOutput.Link.StartsWith(str))
+                            {
+                                System.Diagnostics.Process.Start(path, dataOutput.Link);
+                                break;
+                            }
+                            else
+                            {
+                                continue;
+                            }
                         }
                     }
-                }
 
-                if (dataOutput == mainDataGrid.CurrentItem)
-                {
-                    foreach (var str2 in ht2)
+                    if (dataOutput == mainDataGrid.CurrentItem)
                     {
-                        if (dataOutput.Kategory.EndsWith(str2))
+                        foreach (var str2 in ht2)
                         {
-                            System.Diagnostics.Process.Start(path, dataOutput.Kategory);
-                            break;
-                        }
-                        else if (dataOutput.Title.EndsWith(str2))
-                        {
-                            System.Diagnostics.Process.Start(path, dataOutput.Title);
-                            break;
-                        }
-                        else if (dataOutput.Link.EndsWith(str2))
-                        {
-                            System.Diagnostics.Process.Start(path, dataOutput.Link);
-                            break;
-                        }
-                        else
-                        {
-                            continue;
+                            if (dataOutput.Kategory.EndsWith(str2))
+                            {
+                                System.Diagnostics.Process.Start(path, dataOutput.Kategory);
+                                break;
+                            }
+                            else if (dataOutput.Title.EndsWith(str2))
+                            {
+                                System.Diagnostics.Process.Start(path, dataOutput.Title);
+                                break;
+                            }
+                            else if (dataOutput.Link.EndsWith(str2))
+                            {
+                                System.Diagnostics.Process.Start(path, dataOutput.Link);
+                                break;
+                            }
+                            else
+                            {
+                                continue;
+                            }
                         }
                     }
                 }
@@ -255,7 +264,7 @@ namespace Note
                 ApplicationStatus.Background = this.Background;
 
                 sc.colorProp = selectedColor;
-                SaveInXmlFormat("SerializableColor.xml", sc);
+                SaveInXmlFormat(Environment.CurrentDirectory + "\\" + "SerializableColor.xml", sc);
             }
             catch (Exception ex)
             {
@@ -264,9 +273,12 @@ namespace Note
         }
         public void SaveInXmlFormat(string fileName, object obj)
         {   
+            XmlSerializer eraseSerialise = new XmlSerializer(typeof(SerializableColor));
+            using (Stream fStream = new FileStream(fileName, FileMode.Truncate)) { }
+
             XmlSerializer serializer = new XmlSerializer(typeof(SerializableColor));
             using (Stream fStream = new FileStream(
-                fileName, FileMode.Create, FileAccess.Write, FileShare.None))
+            fileName, FileMode.Open, FileAccess.ReadWrite, FileShare.None))
             {
                 serializer.Serialize(fStream, obj);
             }
@@ -275,16 +287,23 @@ namespace Note
         {
             try
             {
+                string programPath = Environment.CurrentDirectory;
                 var mySerializer = new XmlSerializer(typeof(SerializableColor));
 
-                using var fileStream = new FileStream("SerializableColor.xml", FileMode.Open);
-
-                var myObject = (SerializableColor)mySerializer.Deserialize(fileStream);
-
-                Color color = myObject.colorProp;
-                this.Background = new SolidColorBrush(color);
-                this.BorderBrush = new SolidColorBrush(color);
-                ApplicationStatus.Background = this.Background;
+                if (!File.Exists(programPath + "\\" + "SerializableColor.xml"))
+                {
+                    //using var fileStream = new FileStream(programPath + "\\" + "SerializableColor.xml", FileMode.Create);
+                    new FileInfo(programPath + "\\" + "SerializableColor.xml").Create();
+                }
+                else
+                {
+                    using var fileStream = new FileStream(programPath + "\\" + "SerializableColor.xml", FileMode.Open, FileAccess.Read, FileShare.None);
+                    var myObject = (SerializableColor)mySerializer.Deserialize(fileStream);
+                    Color color = myObject.colorProp;
+                    this.Background = new SolidColorBrush(color);
+                    this.BorderBrush = new SolidColorBrush(color);
+                    ApplicationStatus.Background = this.Background;
+                }
             }
             catch (Exception ex)
             {

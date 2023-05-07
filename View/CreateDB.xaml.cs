@@ -1,4 +1,5 @@
-﻿using Note.Model;
+﻿using Microsoft.Win32;
+using Note.Model;
 using Note.ViewModel;
 using System;
 using System.Collections.Generic;
@@ -31,7 +32,7 @@ namespace Note.View
         public string NameDB { get; set; }
         public string insertIntoPath { get; set; }
         public CreateDB()
-        {
+        {   
             InitializeComponent();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -39,7 +40,9 @@ namespace Note.View
             SqliteConnection = new SQLiteConnection();
             SQLcommand = new SQLiteCommand();
 
-            insertIntoPath = dbName.Text + ".db";
+            string dataBasePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            insertIntoPath = dataBasePath + "/" + dbName.Text + ".db";
             if (!File.Exists(insertIntoPath))
             {
                 try
@@ -107,6 +110,42 @@ namespace Note.View
             {
                 MessageBox.Show($"В вашей директории уже имеется список, именуемый как: {dbName.Text} \n\nПереименуйте свой новый блокнот, либо откройте существующий", 
                     "ВНИМАНИЕ!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+        }
+        private void OpenFileDialog()
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "(*.db)|*.db";
+            openFile.Title = "Выберите файл";
+            openFile.InitialDirectory = "";
+            try
+            {
+                if (openFile.ShowDialog() == true)
+                {
+                    //Notes.Clear();
+
+                    //this.insertIntoPath = openFile.FileName;
+                    //dataOutput.dbFile = openFile.FileName;
+                    //List<DataOutput> dot = dataOutput.ReadData();
+
+                    //Notes = new List<string>();
+
+                    //Notes = dataOutput.Columns;
+                    //Notes.RemoveAt(0);
+
+                    //mainDG();
+
+                    //mainViewModel.statusOneText = $"Открыт файл: {openFile.FileName}";
+
+
+                    //var fileInfo = new FileInfo(openFile.FileName);
+                    //double info = Convert.ToDouble(fileInfo.Length);
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }

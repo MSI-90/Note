@@ -69,7 +69,7 @@ namespace Note.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Note;component/view/roweditor.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Note;V1.0.0.0;component/view/roweditor.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\RowEditor.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

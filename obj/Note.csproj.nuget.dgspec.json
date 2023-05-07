@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\Note _ изменения от 12.02.2023\\Note\\Note.csproj": {}
+    "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\07.05.2023\\Note\\Note.csproj": {}
   },
   "projects": {
-    "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\Note _ изменения от 12.02.2023\\Note\\Note.csproj": {
+    "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\07.05.2023\\Note\\Note.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\Note _ изменения от 12.02.2023\\Note\\Note.csproj",
+        "projectUniqueName": "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\07.05.2023\\Note\\Note.csproj",
         "projectName": "Note",
-        "projectPath": "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\Note _ изменения от 12.02.2023\\Note\\Note.csproj",
+        "projectPath": "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\07.05.2023\\Note\\Note.csproj",
         "packagesPath": "C:\\Users\\.NET\\.nuget\\packages\\",
-        "outputPath": "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\Note _ изменения от 12.02.2023\\Note\\obj\\",
+        "outputPath": "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\07.05.2023\\Note\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

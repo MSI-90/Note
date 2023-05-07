@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ng0mxFESLWs6gW+YOEP+t0llg2LaiapxGk+1FOvfTrO4JsZsCHBqR3ds8QcdB9l8ROpMH2QyxePEuOiBTmvNjA==",
+  "dgSpecHash": "yydNfzmbdqLq44eSreLUdP93BTikPizxmg0Krf6vAS5F9eZbKgLG4pUXhCXgcoz69NfrYo09j0ILecmygy9SsQ==",
   "success": true,
-  "projectFilePath": "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\Note _ изменения от 12.02.2023\\Note\\Note.csproj",
+  "projectFilePath": "H:\\UDEMY\\C#\\Synergy\\WPF.NET\\Проекты\\07.05.2023\\Note\\Note.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\.NET\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\.NET\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

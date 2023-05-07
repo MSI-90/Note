@@ -1,5 +1,5 @@
 is_global = true
-build_property.TargetFramework = net5.0-windows7.0
+build_property.TargetFramework = net5.0-windows
 build_property.TargetPlatformMinVersion = 7.0
 build_property.UsingMicrosoftNETSdkWeb = 
 build_property.ProjectTypeGuids = 
@@ -8,4 +8,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Note
-build_property.ProjectDir = H:\UDEMY\C#\Synergy\WPF.NET\Проекты\07.05.2023\Note\
+build_property.ProjectDir = H:\UDEMY\C#\Synergy\WPF.NET\Проекты\Note _ изменения от 12.02.2023\Note\
